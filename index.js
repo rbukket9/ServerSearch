@@ -58,7 +58,7 @@ function mega_func() {
 
 
 async function mega_func1() {
-    let server = await fetch("https://discord.com/api/guilds/1042166982214168717/widget.json").then(async function (r) {
+    let server = await fetch(`https://discord.com/api/guilds/${server_id}/widget.json`).then(async function (r) {
         if (r.status === 200) {
             return r.json()
         } else {
